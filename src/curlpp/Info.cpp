@@ -18,7 +18,10 @@ InfoTypeConverter<std::string>::get(const curlpp::Easy & handle,
 {
   char * tmp;
   InfoGetter::get(handle, info, tmp);
-  value = tmp;
+  if (tmp == NULL)
+    value.clear();
+  else
+    value = tmp;
 }
 
 
