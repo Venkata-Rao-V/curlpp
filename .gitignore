@@ -58,3 +58,10 @@ projects/
 
 extras/curlpp-config
 extras/curlpp.pc
+/.vscode/*
+/conan.lock
+/conanbuildinfo.txt
+*.vcxproj*
+/examples/Examples/x64/Debug
+projects/
+/graph_info.json
