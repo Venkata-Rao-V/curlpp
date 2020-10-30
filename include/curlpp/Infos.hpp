@@ -62,8 +62,8 @@ typedef curlpp::Info<CURLINFO_SPEED_UPLOAD_T, double> SpeedUpload;
 #if LIBCURL_VERSION_NUM >= 0x070c03
 	typedef curlpp::Info<CURLINFO_SSL_ENGINES, std::list<std::string> > SslEngines;
 #endif 
-	typedef curlpp::Info<CURLINFO_CONTENT_LENGTH_DOWNLOAD, double> ContentLengthDownload;
-	typedef curlpp::Info<CURLINFO_CONTENT_LENGTH_UPLOAD, double> ContentLengthUpload;
+    typedef curlpp::Info<CURLINFO_CONTENT_LENGTH_DOWNLOAD_T, double> ContentLengthDownload;
+    typedef curlpp::Info<CURLINFO_CONTENT_LENGTH_UPLOAD_T, double> ContentLengthUpload;
 	typedef curlpp::Info<CURLINFO_CONTENT_TYPE, std::string> ContentType;
 	typedef curlpp::Info<CURLINFO_HTTPAUTH_AVAIL, long> HttpAuthAvail;
 	typedef curlpp::Info<CURLINFO_PROXYAUTH_AVAIL, long> ProxyAuthAvail;
