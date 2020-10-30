@@ -52,10 +52,10 @@ namespace infos
 	typedef curlpp::Info<CURLINFO_STARTTRANSFER_TIME, double> StartTransferTime;
 	typedef curlpp::Info<CURLINFO_REDIRECT_TIME, double> RedirectTime;
 	typedef curlpp::Info<CURLINFO_REDIRECT_COUNT, long> RedirectCount;
-	typedef curlpp::Info<CURLINFO_SIZE_UPLOAD, double> SizeUpload;
-	typedef curlpp::Info<CURLINFO_SIZE_DOWNLOAD, double> SizeDownload;
-	typedef curlpp::Info<CURLINFO_SPEED_DOWNLOAD, double> SpeedDownload;
-	typedef curlpp::Info<CURLINFO_SPEED_UPLOAD, double> SpeedUpload;
+typedef curlpp::Info<CURLINFO_SIZE_UPLOAD_T, double> SizeUpload;
+typedef curlpp::Info<CURLINFO_SIZE_DOWNLOAD_T, double> SizeDownload;
+typedef curlpp::Info<CURLINFO_SPEED_DOWNLOAD_T, double> SpeedDownload;
+typedef curlpp::Info<CURLINFO_SPEED_UPLOAD_T, double> SpeedUpload;
 	typedef curlpp::Info<CURLINFO_HEADER_SIZE, long> HeaderSize;
 	typedef curlpp::Info<CURLINFO_REQUEST_SIZE, long> RequestSize;
 	typedef curlpp::Info<CURLINFO_SSL_VERIFYRESULT, long> SslVerifyResult;
